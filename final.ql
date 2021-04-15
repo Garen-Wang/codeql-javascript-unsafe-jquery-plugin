@@ -25,4 +25,4 @@
 
 from Config cfg, DataFlow::PathNode source, DataFlow::PathNode sink
 where cfg.hasFlowPath(source, sink)
-select cfg, source, sink
+select sink, source, sink, "Potential XSS vulnerability in plugin."
